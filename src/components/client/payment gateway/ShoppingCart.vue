@@ -1,10 +1,10 @@
 <template>
-    <div class=" flex flex-col items-center justify-center p-4 bg-black w-xxl h-40 border-2 border-black">
+    <div class=" flex flex-col items-center justify-center p-4 bg-red-500 w-xxl h-40 border-2 border-black">
         <h2></h2>
-        <div class=" flex items-center space-x-4 bg-violet-800 p-1 text-white">
-            <img class=" w-20 h-32 bg-white" src="../../../assets/pollo.svg" alt="">
+        <div class=" flex items-center space-x-4  p-1 text-white">
+            <img class=" w-28 h-full " src="../../../assets/pollo.svg" alt="">
             <div class=" h-full flex flex-col justify-around">
-                <h3 class=" text-lg">Nombre del Producto</h3>
+                <h3 class=" text-lg font-bold">Nombre del Producto</h3>
                 <p class=" text-base">Lorem lorem insu insu descripcion descripcion
                     ghfhuif jshajdhd
                 </p>

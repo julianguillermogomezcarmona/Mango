@@ -47,12 +47,12 @@
         </div>
         <div class=" w-4/5 flex flex-col items-center justify-center my-2 m-auto">
             <p class=" text-xl">Total: <span class=" text-2xl font-bold">40000 COP</span></p>
-            <button class=" bg-yellow-400 text-black w-full p-2 rounded-lg font-bold my-2">
+            <button @click="handleActiveModal" class=" bg-yellow-400 text-black w-full p-2 rounded-lg font-bold my-2">
                 Continuar
             </button>
         </div>
     </div>
-    <ModalResumen/>
+    <ModalResumen v-if="isActiveModal"/>
 </template>
 
 
@@ -62,9 +62,19 @@ import { RouterLink } from 'vue-router';
 import ModalResumen from './ModalResumen.vue';
 
 export default{
+    data(){
+        return{
+            isActiveModal: false
+        }
+    },
     props: ['showRender'],
     components:{
         ModalResumen
+    },
+    methods:{
+        handleActiveModal: function() {
+            this.isActiveModal = !this.isActiveModal
+        }
     }
 }
 

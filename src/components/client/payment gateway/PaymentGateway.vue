@@ -1,7 +1,10 @@
 <template>
    <div>
         <div class=" w-10/12 m-auto flex space-x-8">
-            <Shopping/>
+            <div class=" p-4 bg-slate-400 flex flex-col space-y-4 rounded-lg">
+                <Shopping/>
+                <Shopping/>
+            </div>
             <Resumen :showRender="isFeaturedEnable"/>
         </div>
    </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class=" flex justify-around bg-yellow-400 p-4 mb-8">
+  <div class=" flex justify-around bg-red-500 p-4 mb-8">
     <div class=" flex items-center space-x-4">
       <img class=" w-20" src="../../assets/carne.png" alt="no sale">
       <h1 class=" text-4xl font-bold">Mango</h1>

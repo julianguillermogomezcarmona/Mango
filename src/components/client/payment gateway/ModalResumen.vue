@@ -10,7 +10,10 @@
                     <input type="email" id="email" name="email" class="w-full p-2 border rounded mb-4" required>
 
                     <!-- Botón de continuar -->
-                    <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full">Continuar</button>
+                    <RouterLink :to="{ name: 'home' }">
+                        <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full">Continuar</button>
+                    </RouterLink>
+                    
                 </form>
 
                 <!-- Términos de privacidad -->
@@ -24,6 +27,7 @@
 <script>
 
 import Loading from '../../Loading.vue'
+import { RouterLink } from 'vue-router';
 export default {
     data() {
         return {
