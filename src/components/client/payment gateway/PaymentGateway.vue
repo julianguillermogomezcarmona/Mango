@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class=" flex flex-col space-y-10">
         <div class=" w-10/12 m-auto flex space-x-8">
             <div class=" p-4 bg-slate-400 flex flex-col space-y-4 rounded-lg">
                 <Shopping/>
@@ -7,6 +7,7 @@
             </div>
             <Resumen :showRender="isFeaturedEnable"/>
         </div>
+        <Categorys/>
    </div>
 </template>
 
@@ -15,11 +16,13 @@
 import Shopping from './ShoppingCart.vue'
 import Resumen from './Resumen.vue'
 import Process from '../ProcessHeader.vue'
+import Categorys from '../category/Categorys.vue'
  export default {
     components: {
         Shopping,
         Resumen,
-        Process
+        Process,
+        Categorys
     },
 
     data(){
